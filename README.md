@@ -6,7 +6,7 @@
 > Password: No Password² club :)
 ## Auto Installer
 ```
-cd $HOME && pkg install php -y && pkg install git -y && git clone https://github.com/DARK-02/faucetofbob && cd faucetofbob && pkg install nano -y && nano cfg.php
+cd $HOME && pkg install php -y && pkg install git -y && pkg install neofetch -y && git clone https://github.com/DARK-02/faucetofbob && cd faucetofbob && pkg install nano -y && nano cfg.php
 ```
 ## execute
 ```php
