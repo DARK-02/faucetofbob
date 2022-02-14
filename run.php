@@ -62,9 +62,29 @@ $anti_expired=explode('<div class="alert alert-warning text-center" role="alert"
 $expired=explode('<a href="https://faucetofbob.xyz/cleaner.php">click here</a> for clean your browser data.</div>',$anti_expired)[0];
 system('clear');
 if($expired == 'If you get the SESSION EXPIRED error message, please clear your cookie and refresh the page before logging in again. You can '){
-echo $White.'['.$waktu."]  \033[1;1;37;41m ERROR! \033[0m ".$Reddd." anjay.. your cookie expired:v , please cek on cfg.php!\n";
-//echo $d11;
-die();
+echo $White.'['.$waktu."]  \033[1;1;37;41m ERROR! \033[0m ".$Reddd." anjay.. your cookie expired:v , please retype your cookie!\n";
+$cokis = readline("\033[0m(New Cookie)>> ");
+system('
+cat <<LOGIN>cfg.php
+<?php
+//masukkan cookie lu
+$cookie = "'.$cokis.'";
+//masukkan user agent lu
+$useragent = "Mozilla/5.0 (Linux; Android 9; SM-T825Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Safari/537.36";
+
+/*
+pilih waktu sesuka hati, recomend 60
+2 = 120
+5 = 300
+10 = 600
+contoh: $waktu_pencari = "60";
+*/
+$waktu_pencari = "60";
+
+//link ga usah di ganti :v
+$link = "https://faucetofbob.xyz/scratch.html";
+LOGIN
+');
 //}if($expired == ''){
 //echo $White.'['.$waktu."]  \033[1;1;37;41m ERROR! \033[0m ".$Reddd." Periksa jaringan mu!\n";
 //echo $expired;
