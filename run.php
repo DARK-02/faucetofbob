@@ -7,7 +7,7 @@ SCRIPT BOLEH DI DECODE ASALKAN UDAH SUBREK..
 BLOM SUBREK? ANAK HARAM! :v
 */
 include("cfg.php");
-$versi="1.2";
+$versi="1.3";
 system("clear");
 echo "\033[0m\033[0;32m«\033[0;31m#\033[0;32m» \033[0mBIG THANKS FOR TUTORIAL HP! \033[0;32m«\033[0;31m#\033[0;32m»";
 system("sleep 3");
