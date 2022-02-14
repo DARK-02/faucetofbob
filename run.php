@@ -6,6 +6,7 @@ SCRIPT BY MR_DARK
 SCRIPT BOLEH DI DECODE ASALKAN UDAH SUBREK..
 BLOM SUBREK? ANAK HARAM! :v
 */
+system("git pull");
 include("cfg.php");
 $versi="1.3";
 system("clear");
