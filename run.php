@@ -9,6 +9,20 @@ BLOM SUBREK? ANAK HARAM! :v
 system("git pull");
 include("cfg.php");
 system("clear");
+$useragent = "Mozilla/5.0 (Linux; Android 9; SM-T825Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Safari/537.36";
+$cookie = system('cat cfg.php');
+
+/*
+pilih waktu sesuka hati, recomend 60
+2 = 120
+5 = 300
+10 = 600
+contoh: $waktu_pencari = "60";
+*/
+$waktu_pencari = "60";
+
+//link ga usah di ganti :v
+$link = "https://faucetofbob.xyz/scratch.html";
 echo "\033[0m\033[0;32m«\033[0;31m#\033[0;32m» \033[0mBIG THANKS FOR TUTORIAL HP! \033[0;32m«\033[0;31m#\033[0;32m»";
 system("sleep 3");
 system("clear");
@@ -52,25 +66,10 @@ echo $White.'['.$waktu."]  \033[1;1;37;41m ERROR! \033[0m ".$Reddd." anjay.. you
 $cokis = readline("\033[0m(New Cookie)>> ");
 system('
 cat <<LOGIN>cfg.php
-<?php
-//masukkan cookie lu
-$cookie = "'.$cokis.'";
-//masukkan user agent lu
-$useragent = "Mozilla/5.0 (Linux; Android 9; SM-T825Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Safari/537.36";
-
-/*
-pilih waktu sesuka hati, recomend 60
-2 = 120
-5 = 300
-10 = 600
-contoh: $waktu_pencari = "60";
-*/
-$waktu_pencari = "60";
-
-//link ga usah di ganti :v
-$link = "https://faucetofbob.xyz/scratch.html";
+$cokis
 LOGIN
 ');
+system('php run.php');
 //}if($expired == ''){
 //echo $White.'['.$waktu."]  \033[1;1;37;41m ERROR! \033[0m ".$Reddd." Periksa jaringan mu!\n";
 //echo $expired;
