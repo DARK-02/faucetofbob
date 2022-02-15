@@ -11,6 +11,7 @@ include("cfg.php");
 system("clear");
 $useragent = "Mozilla/5.0 (Linux; Android 9; SM-T825Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Safari/537.36";
 $cookie = system('cat cfg.php');
+system('clear');
 
 /*
 pilih waktu sesuka hati, recomend 60
@@ -66,7 +67,7 @@ echo $White.'['.$waktu."]  \033[1;1;37;41m ERROR! \033[0m ".$Reddd." anjay.. you
 $cokis = readline("\033[0m(New Cookie)>> ");
 system('
 cat <<LOGIN>cfg.php
-$cokis
+'.$cokis.'
 LOGIN
 ');
 system('php run.php');
