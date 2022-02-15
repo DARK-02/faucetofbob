@@ -8,25 +8,10 @@ BLOM SUBREK? ANAK HARAM! :v
 */
 system("git pull");
 include("cfg.php");
-$versi="1.3";
 system("clear");
 echo "\033[0m\033[0;32m«\033[0;31m#\033[0;32m» \033[0mBIG THANKS FOR TUTORIAL HP! \033[0;32m«\033[0;31m#\033[0;32m»";
 system("sleep 3");
 system("clear");
-$header1a = array();
-$header1a[] = "user-agent:".$useragent;
-$ch1a = curl_init();
-        curl_setopt($ch1a, CURLOPT_URL, "https://raw.githubusercontent.com/DARK-02/faucetofbob/main/version.txt");
-        curl_setopt($ch1a, CURLOPT_FOLLOWLOCATION, true);
-        curl_setopt($ch1a, CURLOPT_ENCODING, "");
-        curl_setopt($ch1a, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($ch1a, CURLOPT_CUSTOMREQUEST, "GET");
-        curl_setopt($ch1a, CURLOPT_HTTPHEADER, $header1a);
-        curl_setopt($ch1a, CURLOPT_TIMEOUT, 60);
-        curl_setopt($ch1a, CURLOPT_SSL_VERIFYPEER, 0);
-        $d1a = curl_exec($ch1a);
-$persi=explode("dark faucetofbob version: ",$d1a[1]);
-if($persi>=$versi){
 //include("cfg.php");
 $White="\033[0;37m";
 echo "\033[0;30m";
@@ -444,10 +429,5 @@ sleep(3);
 }
 }
 }
-}
-else{
-echo "\033[0m\033[0;32m«\033[0;31m#\033[0;32m» \033[0mScript Update! \033[0;32m«\033[0;31m#\033[0;32m»";
-system("git pull");
-system("php run.php");
 }
 ?>
