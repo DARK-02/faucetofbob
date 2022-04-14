@@ -59,10 +59,10 @@ $ch11 = curl_init();
         curl_setopt($ch11, CURLOPT_TIMEOUT, 60);
         curl_setopt($ch11, CURLOPT_SSL_VERIFYPEER, 0);
         $d11 = curl_exec($ch11);
-$anti_expired=explode('<div class="alert alert-warning text-center" role="alert">',$d1)[1];
-$expired=explode('<a href="https://faucetofbob.xyz/cleaner.php">click here</a> for clean your browser data.</div>',$anti_expired)[0];
+$anti_expired=explode('<h4 class="modal-title">',$d1)[1];
+$expired=explode('</h4>',$anti_expired)[0];
 system('clear');
-if($expired == 'If you get the SESSION EXPIRED error message, please clear your cookie and refresh the page before logging in again. You can '){
+if($expired == 'Member Login'){
 echo $White.'['.$waktu."]  \033[1;1;37;41m ERROR! \033[0m ".$Reddd." anjay.. your cookie expired:v , please retype your cookie!\n";
 $cokis = readline("\033[0m(New Cookie)>> ");
 system('
